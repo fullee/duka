@@ -8,3 +8,6 @@ https://vitejs.cn/guide/features.html#jsx
 https://docs.rs/tauri/1.0.5/tauri/
 
 ![img.png](docs/assert/img.png)
+
+https://reactrouter.com/en/main/hooks/use-navigate
+https://tailwindcss.com
