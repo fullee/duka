@@ -1,0 +1,10 @@
+D:\code\mingzheng\dukaji\docs\身份证\4)CVR-100N SDK开发包下载\开发资料\Example\C#\100A_U_D_Demo_C#\bin\x64\Debug\CVR100A_U_DSDK_Demo.exe.config
+D:\code\mingzheng\dukaji\docs\身份证\4)CVR-100N SDK开发包下载\开发资料\Example\C#\100A_U_D_Demo_C#\bin\x64\Debug\CVR100A_U_DSDK_Demo.exe
+D:\code\mingzheng\dukaji\docs\身份证\4)CVR-100N SDK开发包下载\开发资料\Example\C#\100A_U_D_Demo_C#\bin\x64\Debug\CVR100A_U_DSDK_Demo.pdb
+D:\code\mingzheng\dukaji\docs\身份证\4)CVR-100N SDK开发包下载\开发资料\Example\C#\100A_U_D_Demo_C#\obj\x64\Debug\CVR100A_U_DSDK_Demo.csproj.AssemblyReference.cache
+D:\code\mingzheng\dukaji\docs\身份证\4)CVR-100N SDK开发包下载\开发资料\Example\C#\100A_U_D_Demo_C#\obj\x64\Debug\CVR100A_U_DSDK_Demo.MainWnd.resources
+D:\code\mingzheng\dukaji\docs\身份证\4)CVR-100N SDK开发包下载\开发资料\Example\C#\100A_U_D_Demo_C#\obj\x64\Debug\CVR100A_U_DSDK_Demo.Properties.Resources.resources
+D:\code\mingzheng\dukaji\docs\身份证\4)CVR-100N SDK开发包下载\开发资料\Example\C#\100A_U_D_Demo_C#\obj\x64\Debug\CVR100A_U_DSDK_Demo.csproj.GenerateResource.cache
+D:\code\mingzheng\dukaji\docs\身份证\4)CVR-100N SDK开发包下载\开发资料\Example\C#\100A_U_D_Demo_C#\obj\x64\Debug\CVR100A_U_DSDK_Demo.csproj.CoreCompileInputs.cache
+D:\code\mingzheng\dukaji\docs\身份证\4)CVR-100N SDK开发包下载\开发资料\Example\C#\100A_U_D_Demo_C#\obj\x64\Debug\CVR100A_U_DSDK_Demo.exe
+D:\code\mingzheng\dukaji\docs\身份证\4)CVR-100N SDK开发包下载\开发资料\Example\C#\100A_U_D_Demo_C#\obj\x64\Debug\CVR100A_U_DSDK_Demo.pdb

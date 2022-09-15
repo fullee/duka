@@ -1,0 +1,72 @@
+﻿1 special suggestion
+!!! It is recommended that every client who wants to use the development kit run the test program first
+!!! No problem at all, just start to look at the development kit
+!!! If there is any problem in the test, solve the problem first
+
+2 The development kit is classified by system and supports the following five systems
+    Android:
+        android_as
+    iPhone:
+        ios_xcode_objectc (oc samples)
+        ios_xcode_swift (swift samples)
+    mac:
+        macos_xcode_objectc (oc samples)
+    Linux:
+        linux_make_desktop (desktop samples, include library for x86 and x64)
+        linux_make_embedded (cross-compiled samples, need toolchains to compile)
+    Windows:
+    	windows_csharp (c# samples)
+    	windows_qt (qt samples)
+    	windows_vs_cpp (VC/C++ samples)
+    	windows_java (java samples)
+
+3 Each development kit contains a generated APK or EXE that can be tested directly
+  Each development package contains six test programs, as shown below:
+    samplepos
+      esc/pos print, with autoreply
+
+    samplepage
+      esc/page print, with autoreply
+
+    samplelabel
+      label print, with autoreply
+
+    samplepos_withoutautoreply
+      esc/pos print, without autoreply
+
+    samplepage_withoutautoreply
+      esc/page print, without autoreply
+
+    samplelabel_withoutautoreply
+      label print, without autoreply
+
+4 Integrated description
+  In order, 
+  If the port is not enabled, enable the port
+  If the port has been opened, send various commands to print text bar code two-dimensional code pictures
+  There are a lot of functions, but that's what the flow is all about
+
+  In a nutshell, it looks like this:
+  if (!CP_Port_IsConnectionValid(h)) {
+      CP_Port_Close(h);
+  }
+  if (!CP_Port_IsOpened(h)) {
+      h = CP_Port_OpenXXX();
+  }
+  if (CP_Port_IsOpened(h)) {
+
+    // This can send any instruction as needed, as long as the printer supports it
+    // Specific what function what function, can you see the corresponding model of the example
+    // The function is more, but the flow is more fixed, is in order up one instruction code, it forms a document
+    CP_Pos_XXX
+    ... 
+    CP_Pos_XXX
+
+  }
+  In detail, please test the example first, and then look at the code.
+
+  Note: It is recommended to re-open the port every time for network port printing, because if no data is sent within 10 seconds, the printer will automatically close the network port connection
+
+5 Documents
+  The document is in the doc directory, be sure to look at it
+  

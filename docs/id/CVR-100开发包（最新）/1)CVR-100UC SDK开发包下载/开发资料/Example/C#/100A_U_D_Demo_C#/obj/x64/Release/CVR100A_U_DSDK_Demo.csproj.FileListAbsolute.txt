@@ -1,0 +1,8 @@
+D:\100UD\100U和100D\100UDDemo_C#\bin\x64\Release\CVR100A_U_DSDK_Demo.exe.config
+D:\100UD\100U和100D\100UDDemo_C#\bin\x64\Release\CVR100A_U_DSDK_Demo.exe
+D:\100UD\100U和100D\100UDDemo_C#\bin\x64\Release\CVR100A_U_DSDK_Demo.pdb
+D:\100UD\100U和100D\100UDDemo_C#\obj\x64\Release\CVR100A_U_DSDK_Demo.MainWnd.resources
+D:\100UD\100U和100D\100UDDemo_C#\obj\x64\Release\CVR100A_U_DSDK_Demo.Properties.Resources.resources
+D:\100UD\100U和100D\100UDDemo_C#\obj\x64\Release\CVR100A_U_DSDK_Demo.csproj.GenerateResource.Cache
+D:\100UD\100U和100D\100UDDemo_C#\obj\x64\Release\CVR100A_U_DSDK_Demo.exe
+D:\100UD\100U和100D\100UDDemo_C#\obj\x64\Release\CVR100A_U_DSDK_Demo.pdb

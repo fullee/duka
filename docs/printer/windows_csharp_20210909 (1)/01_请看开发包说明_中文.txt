@@ -1,0 +1,71 @@
+﻿1 特别提示
+！！！建议每个要使用开发包的客户，一定要先运行测试程序。
+！！！完全没问题了，才开始看开发包。
+！！！测试出任何问题，都要先解决问题。
+
+2 开发包按照系统分类，支持以下五种系统
+    安卓：
+        android_as
+    苹果手机系统：
+        ios_xcode_objectc（OC版本的开发包和例子）
+        ios_xcode_swift（Swift版本的开发包和例子）
+    苹果电脑系统：
+        macos_xcode_objectc（OC版本的开发包和例子）
+    Linux系统：
+        linux_make_desktop（桌面端的开发包和例子，里面有x86和x64两个平台的库）
+        linux_make_embedded（嵌入式平台，需要专门编译对应平台的开发包）
+    Windows系统：
+    	windows_csharp（C#）
+    	windows_qt（QT）
+    	windows_vs_cpp（VC/C++）
+    	windows_java（java）
+
+3 每个开发包里面都有生成好的apk或exe，可以直接测试。
+  每个开发包里面，都包含6个测试程序，如下：
+    samplepos
+      票据打印，带自动回传功能
+
+    samplepage
+      页模式打印，带自动回传功能
+
+    samplelabel
+      标签打印，带自动回传功能
+
+    samplepos_withoutautoreply
+      票据打印，无自动回传功能
+
+    samplepage_withoutautoreply
+      页模式打印，无自动回传功能
+
+    samplelabel_withoutautoreply
+      标签打印，无自动回传功能
+
+4 集成说明
+  按顺序：
+  若端口未打开，则打开端口。
+  若端口已打开，则发送各种指令打印文本条码二维码图片。
+  函数比较多，但是流程总的就是这样的。
+
+  简单来说，如下所示：
+  if (!CP_Port_IsConnectionValid(h)) {
+      CP_Port_Close(h);
+  }
+  if (!CP_Port_IsOpened(h)) {
+      h = CP_Port_OpenXXX();
+  }
+  if (CP_Port_IsOpened(h)) {
+
+    // 这里面根据需要可以发送任何指令，前提是打印机支持
+    // 具体什么函数什么功能，可以看对应机型的例子
+    // 函数比较多，但是流程比较固定，就是按顺序一个一个指令码起来，就形成了一个单据
+    CP_Pos_XXX
+    ... 
+    CP_Pos_XXX
+
+  }
+  详细的，请先测试例子，测完了，再看代码。
+
+  注意：网口打印建议每次都要重新打开端口，这是因为若10秒钟未送数据，打印机会自动关闭网口连接。
+
+5 文档
+  文档在doc目录，一定要看。

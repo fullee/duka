@@ -1,0 +1,89 @@
+<HTML>
+<head>
+<meta charset="utf-8" />
+</head>
+<H1> OCX Test Page </H1><p>
+You should see your  forms or controls embedded in the form below.
+<HR><center><P>
+<OBJECT ID=PrintStatus  style="display:none"
+	  CLASSID="clsid:044F0BF3-9131-4692-A8FF-DF374BA183F7"
+	  codebase="./MsPrintax.ocx#version=2,0,0,0"
+	  width=100
+	  height=100
+	  align=center
+	  hspace=0
+	  vspace=0
+>
+</OBJECT>
+<br>
+
+<input type=button value='SetInit'  onclick='TestCall1()'/>
+<input type=button value='GetStatus'  onclick='TestCall2()'/> 
+<input type=button value='Print Ticket'  onclick='TestCall3()'/> 
+<input type=button value='SetClose'  onclick='TestCall4()'/>
+ 
+
+<script>
+  function TestCall1(){  
+  
+	//PrintStatus.SetPrintport("USB001",115200);
+	PrintStatus.SetUsbportauto();
+    alert(PrintStatus.SetInit());
+  }  
+    function TestCall4(){  
+   
+    alert(PrintStatus.SetClose());
+  } 
+function TestCall2(){  
+	alert(PrintStatus.GetStatus());
+  }   
+  function TestCall3(){  
+  
+				PrintStatus.SetClean();
+				PrintStatus.SetAlignment(0);   
+				PrintStatus.SetSizetext(1,1);  
+
+				PrintStatus.SetLinespace(30);  
+				PrintStatus.PrintString("  您的号码是:",0);  
+				PrintStatus.SetAlignment(1);  
+				PrintStatus.SetBold(1);  
+				PrintStatus.SetSizetext(2,2); 
+				PrintStatus.PrintString("A005",0);
+				PrintStatus.SetSizetext(1,1); 
+				PrintStatus.SetAlignment(0); 
+				PrintStatus.SetBold(0);  
+				PrintStatus.PrintFeedline(2);
+				PrintStatus.PrintString("  您前面有1人等候,注意业务窗口的呼叫号码信息。过号请重新取号。",0); 
+				PrintStatus.PrintFeedline(1);
+				PrintStatus.PrintString("  谢谢您的合作!",0); 
+				PrintStatus.PrintFeedline(1);
+				PrintStatus.SetClean();
+				PrintStatus.PrintQrcode("www.xxx.com",5,6,0);
+				
+				PrintStatus.SetAlignment(2);   
+
+				PrintStatus.PrintFeedline(2);	
+				PrintStatus.PrintString("2015-05-26 15:35:12",0); 
+				PrintStatus.PrintFeedline(2);
+				
+
+				PrintStatus.SetAlignment(0); 
+				PrintStatus.PrintString("SetHTseat",0); 
+				PrintStatus.SetHTseat("10,20,30,",3);
+				PrintStatus.PrintString("one",1);
+				PrintStatus.PrintNextHT();
+				PrintStatus.PrintString("two",1);
+				PrintStatus.PrintNextHT();
+				PrintStatus.PrintString("three",0);
+				PrintStatus.PrintString("1",1);
+				PrintStatus.PrintNextHT();
+				PrintStatus.PrintString("2",1);
+				PrintStatus.PrintNextHT();
+				PrintStatus.PrintString("3",0);
+				
+				PrintStatus.PrintFeedline(6);
+				PrintStatus.PrintCutpaper(0);			
+
+  }  
+</script>
+</HTML>

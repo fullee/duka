@@ -1,0 +1,10 @@
+/bin/
+/dll
+/samplepos.jar
+/samplelabel.jar
+/samplepage.jar
+/samplepos_withoutautoreply.jar
+/samplelabel_withoutautoreply.jar
+/samplepage_withoutautoreply.jar
+/autoreplyprint_windows_eclipse_java_sample_src_*.zip
+/autoreplyprint_windows_eclipse_java_sample_exe_*.zip

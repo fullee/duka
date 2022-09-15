@@ -1,0 +1,5 @@
+bin
+obj
+*.suo
+/autoreplyprint_windows_csharp_sample_src_*.zip
+/autoreplyprint_windows_csharp_sample_exe_*.zip
