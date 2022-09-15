@@ -1,29 +1,20 @@
 import {useEffect, useState} from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import 'antd/dist/antd.css';
 import {invoke} from "@tauri-apps/api";
 import {Button} from "antd";
+import {Link} from "react-router-dom";
 
-function App() {
+function Identification() {
   const [count, setCount] = useState(0)
   const [title, setTitle] = useState<string>('')
   useEffect(() => {
-    invoke('greet', {name: "lwl"})
+    invoke('greet', {name: "xff"})
       .then((resp) => setTitle(String(resp)))
   }, [])
 
   return (
     <div>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo"/>
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo"/>
-        </a>
-      </div>
-      <h1 className="text-white">Vite + React + {title}</h1>
+      <Link to="/" >BACK</Link>
+      <h1 className="text-white">请将身份证放置打印机识别区域</h1>
       <div className="card">
         <Button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -43,7 +34,6 @@ function App() {
           }
         }}>打开
         </Button>
-        <a href="/identification" >身份识别</a>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
@@ -52,4 +42,4 @@ function App() {
   )
 }
 
-export default App
+export default Identification
